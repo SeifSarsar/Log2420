@@ -5,39 +5,105 @@
 	width:867px;
 	margin:auto auto;
 	font-family: "Fira Sans","Trebuchet MS","Helvetica Neue","Arial",sans-serif;
+    border: 1px solid #d4dade
 }
-/*rgba(55,152,212,0.8)*/
+
 div{
 	text-align:center;
-	
+    align-items: center;
+    font-size:100%;
+    box-sizing:border-box;
+}
+
+
+.checkbox{
+   background:white;
+   height:24px;
+   width:24px; 
+   display:inline-block;
+   border-radius:4px;
 }
 
 #dateRow{
 	display: flex;
-	
+    color: #5d6e79;
+    border-bottom: 1px solid #d4dade;
+
 }
 
+    
+#checkRow .normalWidth{
+    display:flex;
+    color:#3798D4;
+    height:57px;
+    align-items: center;
+    justify-content: center;
+}
+
+
 #quaRow{
+    height:45px;
 	display: flex;
 }
 
 #checkRow{
+    height:57px;
 	display: flex;
+    background-color:#91C8E9;
+    border-bottom: 1px solid #fff;
 }
-#deathRow{
+.deathRow{
 	display: flex;
+    border-bottom: 1px solid #fff;
+}
+
+.deathRow .normalWidth{
+    background-color:#FCEDE9;
+    height:45px;
+    align-items: center;
+    width:72px;
 }
 
 
 .normalWidth{
 	width:72px;
+    border-left: 1px solid #d4dade;
 }
 
-.higherWidth{
+div.higherWidth{
+    display:flex;
 	width:216px;
-	text-align:left;
+   
+
+}
+#quaRow .normalWidth{
+    display:flex;
+    color:#3798D4;
+    height:45px;
+    align-items: center;
+    justify-content: center;
 }
 
+#quaRow .higherWidth{
+    padding-left:16px;
+    color: #8696a2;
+    font-weight: 600;
+    font-size:100%;
+}
+.fa-user-circle-o{
+    color:white;
+    margin:0px 16px;
+}
+.higherWidth input{
+    height:41px;
+    width:152px;
+    border-radius: 8px;
+    border:none;
+    padding: 0 8px;
+    box-sizing: border-box;
+    padding-right:8px;
+    
+}
 .vertFlexRow div{
 	display: flex;
 	flex-direction:column;
@@ -49,29 +115,41 @@ div{
 	flex-direction:column;
 
 }
-.higherWidth img{
-	height:20px;
-	width:20px;
-	margin:3px 0px;
+
+img{
+    width:20px;
+    height:20px;
+    margin: 0 16px;
+    
 }
 
-#checkRow .normalWidth img {
-	height:57px;
-}
 .time {
 	margin-bottom:16px;
 	width:72px;
-	box-sizing:border-box;
 	padding: 16px 4px 0px 4px;
-	font-size:10px;
+	font-size:90%;
 }
 
 .date {
 	padding-top:16px;
 }
 
-.day {
-	margin:4px 0;
+.month{
+    
+    font-size:16px;
 }
+
+.weekday{
+    font-style:normal;
+    text-transform: uppercase;
+    font-weight:600;
+}
+.day {
+    color:black;
+	margin:4px 0;
+    font-size: 26px;
+    font-weight:500;
+}
+
 
 
