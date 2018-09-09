@@ -7,249 +7,445 @@
         <meta name="robots" content="noindex, follow" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" type = "text/css" href = "app.css"> 
+        <script src="app.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 		<div class="container">
 			<div id="dateRow" class="vertFlexRow">
-				<div class="higherWidth"></div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">27</div>
-						<div class="weekday">MON</div>
-					</div>
-					<div class="time">
-						<div>10:00 </div>
-						<div>12:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">27</div>
-						<div class="weekday">MON</div>
-					</div>
-					<div class="time">
-						<div>14:00 </div>
-						<div>16:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">28</div>
-						<div class="weekday">TUE</div>
-					</div>
-					<div class="time">
-						<div>10:00 </div>
-						<div>12:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">28</div>
-						<div class="weekday">MON</div>
-					</div>
-					<div class="time">
-						<div>10:00 </div>
-						<div>12:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">29</div>
-						<div class="weekday">WED</div>
-					</div>
-					<div class="time">
-						<div>8:00 </div>
-						<div>10:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">29</div>
-						<div class="weekday">WED</div>
-					</div>
-					<div class="time">
-						<div>14:00 </div>
-						<div>16:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div>Aug</div>
-						<div class = "day">30</div>
-						<div class="weekday">THU</div>
-					</div>
-					<div class="time">
-						<div>10:00</div>
-						<div>12:00</div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">31</div>
-						<div class="weekday">FRI</div>
-					</div>
-					<div class="time">
-						<div>10:00 </div>
-						<div>12:00 </div>
-					</div>
-				</div>
-				<div class="normalWidth">
-					<div class = "date">
-						<div class="month">Aug</div>
-						<div class = "day">31</div>
-						<div class="weekday">FRI</div>
-					</div>
-					<div class="time">
-						<div>14:00 </div>
-						<div>16:00 </div>
-					</div>
-				</div>
-			</div>
-			<div id="quaRow">
-				<div class="higherWidth"> 5 participants</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>3
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>3
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>4
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>3
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>4
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>4
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>3
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>1
-				</div>
-				<div class="normalWidth">
-					<i class="fa fa-check"></i>3
-				</div>
-			</div>
-			<div id="checkRow">
 				<div class="higherWidth">
-					<img src="Images/particip1.png">
-                    <input type="text" placeholder="Enter your name">
+                    <div class="blankSpace"></div>
+                    <div id="nParticipants">5 participants</div>
+                    <div id="nameInput">
+                            <img src="Images/particip1.png">
+                            <input type="text" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">27</div>
+                            <div class="weekday">MON</div>
+                        </div>
+                        <div class="time">
+                            <div>10:00 </div>
+                            <div>12:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+					<i class="fa fa-check"></i>3
+				    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-                    <div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">27</div>
+                            <div class="weekday">MON</div>
+                        </div>
+                        <div class="time">
+                            <div>14:00 </div>
+                            <div>16:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-                    <div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">28</div>
+                            <div class="weekday">TUE</div>
+                        </div>
+                        <div class="time">
+                            <div>10:00 </div>
+                            <div>12:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-					<div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">28</div>
+                            <div class="weekday">MON</div>
+                        </div>
+                        <div class="time">
+                            <div>10:00 </div>
+                            <div>12:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-				    <div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">29</div>
+                            <div class="weekday">WED</div>
+                        </div>
+                        <div class="time">
+                            <div>8:00 </div>
+                            <div>10:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i> 
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-					<div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">29</div>
+                            <div class="weekday">WED</div>
+                        </div>
+                        <div class="time">
+                            <div>14:00 </div>
+                            <div>16:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks" >
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i> 
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-					<div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div>Aug</div>
+                            <div class = "day">30</div>
+                            <div class="weekday">THU</div>
+                        </div>
+                        <div class="time">
+                            <div>10:00</div>
+                            <div>12:00</div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-					<div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">31</div>
+                            <div class="weekday">FRI</div>
+                        </div>
+                        <div class="time">
+                            <div>10:00 </div>
+                            <div>12:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
-				<div class="normalWidth">
-                    <div class="checkbox"></div>
-				</div>
-				<div class="normalWidth">
-					<div class="checkbox"></div>
+                <div class="normalWidth" onclick="vote(this)">
+                    <div class="calendarBox">
+                        <div class = "date">
+                            <div class="month">Aug</div>
+                            <div class = "day">31</div>
+                            <div class="weekday">FRI</div>
+                        </div>
+                        <div class="time">
+                            <div>14:00 </div>
+                            <div>16:00 </div>
+                        </div>
+                    </div>
+                    <div  class="nChecks">
+                        <i class="fa fa-check"></i>3
+                    </div>
+                    <div class="checkbox">
+                        <div class="whiteSpace">
+                                <i class='fa fa-check'></i>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<div class="deathRow">
-				<div class="higherWidth">
+				<div class="higherWidth" onmouseover="displayPencil(this)" onmouseout="hidePencil(this)">
                     <img src="Images/particip2.png">
-                    <div>Mathieu</div>
+                    <div class="nameWithPencil">
+                        <div >Mathieu</div>
+                        <div class="pencilBox">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
+                    
                 </div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
 			</div>
             <div class="deathRow">
-				<div class="higherWidth">
+				<div class="higherWidth" onmouseover="displayPencil(this)" onmouseout="hidePencil(this)">
                     <img src="Images/particip2.png">
-                    <div>Kasra</div>
+                     <div class="nameWithPencil">
+                        <div >Kasra</div>
+                        <div class="pencilBox">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
                 </div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
 			</div>
             <div class="deathRow">
-				<div class="higherWidth">
+				<div class="higherWidth" onmouseover="displayPencil(this)" onmouseout="hidePencil(this)">
                     <img src="Images/particip2.png">
-                    <div>Audrey</div>
+                     <div class="nameWithPencil">
+                        <div >Audrey</div>
+                        <div class="pencilBox">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
                 </div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
 			</div>
             <div class="deathRow">
-				<div class="higherWidth">
+				<div class="higherWidth" onmouseover="displayPencil(this)" onmouseout="hidePencil(this)">
                     <img src="Images/particip2.png">
-                    <div>Antoine</div>
+                     <div class="nameWithPencil">
+                        <div >Antoine</div>
+                        <div class="pencilBox">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
                 </div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
 			</div>
             <div class="deathRow">
-				<div class="higherWidth">
+				<div class="higherWidth" onmouseover="displayPencil(this)" onmouseout="hidePencil(this)">
                     <img src="Images/particip2.png">
-                    <div>Michel</div>
+                     <div class="nameWithPencil">
+                        <div >Michel</div>
+                        <div class="pencilBox">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
                 </div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
-				<div class="normalWidth"></div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+				<div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
+                <div class="normalWidth" onmouseover="displayInfo(this)" onmouseout="hideInfo(this)">
+                    <div class="info">
+                    YO MAN</div>
+                </div>
 			</div>
 		</div>
 		

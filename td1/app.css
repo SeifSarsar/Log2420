@@ -5,7 +5,7 @@
 	width:867px;
 	margin:auto auto;
 	font-family: "Fira Sans","Trebuchet MS","Helvetica Neue","Arial",sans-serif;
-    border: 1px solid #d4dade
+    border:1px solid #d4dade;
 }
 
 div{
@@ -13,48 +13,53 @@ div{
     align-items: center;
     font-size:100%;
     box-sizing:border-box;
+   
 }
 
-
-.checkbox{
-   background:white;
-   height:24px;
-   width:24px; 
-   display:inline-block;
-   border-radius:4px;
+div.higherWidth{
+    display:flex;
+    width:216px;
 }
 
 #dateRow{
 	display: flex;
     color: #5d6e79;
-    border-bottom: 1px solid #d4dade;
-
+    border-bottom : 1px solid #fff;
 }
 
-    
-#checkRow .normalWidth{
-    display:flex;
-    color:#3798D4;
-    height:57px;
-    align-items: center;
-    justify-content: center;
+#dateRow .higherWidth div{
+    width:100%;
 }
 
-
-#quaRow{
-    height:45px;
+.vertFlexRow .normalWidth,.vertFlexRow .higherWidth{
 	display: flex;
+	flex-direction:column;
+
 }
 
-#checkRow{
-    height:57px;
-	display: flex;
-    background-color:#91C8E9;
-    border-bottom: 1px solid #fff;
+#dateRow .higherWidth {
+    justify-content: start;
 }
+
+#dateRow .normalWidth .checkbox .fa-check{
+    display:none;
+}
+
+#dateRow .normalWidth.checked{
+    background-color:rgb(235,247,212);
+
+}
+#dateRow .normalWidth.checked .checkbox .fa-check{
+    display:block;
+}
+
 .deathRow{
 	display: flex;
-    border-bottom: 1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+
+.deathRow .normalWidth.checked{
+    background-color:transparent;
 }
 
 .deathRow .normalWidth{
@@ -62,67 +67,53 @@ div{
     height:45px;
     align-items: center;
     width:72px;
+    border-left:1px solid #d4dade;
 }
 
-
-.normalWidth{
-	width:72px;
-    border-left: 1px solid #d4dade;
-}
-
-div.higherWidth{
+#nParticipants{
     display:flex;
-	width:216px;
-   
-
-}
-#quaRow .normalWidth{
-    display:flex;
-    color:#3798D4;
     height:45px;
-    align-items: center;
-    justify-content: center;
-}
-
-#quaRow .higherWidth{
     padding-left:16px;
     color: #8696a2;
     font-weight: 600;
     font-size:100%;
-}
-.fa-user-circle-o{
-    color:white;
-    margin:0px 16px;
-}
-.higherWidth input{
-    height:41px;
-    width:152px;
-    border-radius: 8px;
-    border:none;
-    padding: 0 8px;
-    box-sizing: border-box;
-    padding-right:8px;
-    
-}
-.vertFlexRow div{
-	display: flex;
-	flex-direction:column;
-
+    border-top:1px solid #d4dade;
 }
 
-.vertFlexRow div div{
-	display: flex;
-	flex-direction:column;
-
+.whiteSpace{
+   background:white;
+   color: #87C627;
+   height:24px;
+   width:24px; 
+   font-size:20px;
+   display:flex;
+   justify-content: center;
+   border-radius:4px;
+}
+.blankSpace{
+    width:100%;
+    height:156.8px;
 }
 
-img{
-    width:20px;
-    height:20px;
-    margin: 0 16px;
-    
+
+
+.checkbox{ 
+    display:flex;
+    color:#3798D4;
+    height:57px;
+    align-items: center;
+    justify-content: center;
+    background-color:#91C8E9;
+    width:72px;
+    border-top:1px solid #d4dade;
+    border-left:1px solid #fff;
 }
 
+.calendarBox{
+    border-left:1px solid #d4dade;
+    width:72px;
+}
+ 
 .time {
 	margin-bottom:16px;
 	width:72px;
@@ -131,7 +122,7 @@ img{
 }
 
 .date {
-	padding-top:16px;
+    padding-top:16px;
 }
 
 .month{
@@ -150,6 +141,90 @@ img{
     font-size: 26px;
     font-weight:500;
 }
+
+.nChecks{
+    height:45px;
+    width:72px;
+    display: flex;
+    flex-direction: row;
+    color:#3798D4;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid #d4dade;
+    border-left:1px solid #d4dade;
+    box-sizing: border-box;
+}
+
+.nChecks i {
+    font-size:20px;
+}
+
+#nameInput{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:57px;
+    background-color:#91C8E9;
+    border-top:1px solid #d4dade;
+    box-sizing: border-box;
+}
+#nameInput input{
+    height:41px;
+    width:152px;
+    border-radius: 8px;
+    border:none;
+    padding: 0 8px;
+    box-sizing: border-box;
+    padding-right:8px;
+}
+
+
+.info{
+    position:relative;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius:4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:10px;
+    top:-205px;
+    width:160px;
+    right:45px;
+    background:white;
+    height:200px;
+}
+
+.nameWithPencil{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.pencilBox{
+    display:none;
+    justify-content: center;
+    color:#3798D4;
+    width:52px;
+    height:40px;
+    
+}
+.pencilBox:hover{
+    background-color:aliceblue;
+}
+
+.fa-user-circle-o{
+    color:white;
+    margin:0px 16px;
+}
+
+img{
+    width:20px;
+    height:20px;
+    margin: 0 16px;
+    
+}
+
+
 
 
 
