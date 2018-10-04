@@ -1,0 +1,47 @@
+{
+    "Calendrier" : [
+	["Mon Aug 27 2018 10:00:00 GMT-0400 (EDT)", 120],
+	["Mon Aug 27 2018 14:00:00 GMT-0400 (EDT)", 120],
+	["Tue Aug 28 2018 10:00:00 GMT-0400 (EDT)", 120],
+	["Tue Aug 28 2018 14:00:00 GMT-0400 (EDT)", 120],
+	["Wed Aug 29 2018 10:00:00 GMT-0400 (EDT)", 120],
+	["Wed Aug 29 2018 14:00:00 GMT-0400 (EDT)", 120],
+	["Thu Aug 30 2018 10:00:00 GMT-0400 (EDT)", 120],
+	["Fri Aug 31 2018 10:00:00 GMT-0400 (EDT)", 120],
+	["Fri Aug 31 2018 14:00:00 GMT-0400 (EDT)", 120]
+    ],
+
+    "Participants" :
+    [
+	{
+	    "Nom" : "Michel",
+	    "Statut" : "EnCours",
+	    "Disponibilités" : [0,0,0,0,0,0,0,0,0]
+	},
+	{
+	    "Nom" : "Mathieu",
+	    "Statut" : "ComplÃ©tÃ©",
+	    "Disponibilités" : [1,1,1,1,1,1,0,0,1]
+	},
+	{
+	    "Nom" : "Kasra",
+	    "Statut" : "ComplÃ©tÃ©",
+	    "Disponibilités" : [0,0,0,0,1,1,1,0,0]
+	},
+	{
+	    "Nom" : "Audrey",
+	    "Statut" : "ComplÃ©tÃ©",
+	    "Disponibilités" : [0,1,1,1,0,0,1,1,1]
+	},
+	{
+	    "Nom" : "Antoine",
+	    "Statut" : "ComplÃ©tÃ©",
+	    "Disponibilités" : [1,1,1,1,1,1,0,0,0]
+	},
+	{
+	    "Nom" : "Michel",
+	    "Statut" : "ComplÃ©tÃ©",
+	    "Disponibilités" : [1,0,1,0,1,1,1,0,1]
+	}
+    ]
+}
